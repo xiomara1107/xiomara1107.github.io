@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <link rel="stylesheet" href="css/Actividad1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Sistemas de Control de Versiones </title>
+   
+</head>
+
+<body>
+  
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/security-265130_640.jpg"  class="d-block w-100" alt="Sistemas de Control Versiones">
+          </div>
+          <div class="carousel-item">
+            <img src="img/darknet-3588402_640.jpg" class="d-block w-100" alt="Sistemas de Control de Versiones">
+          </div>
+          <div class="carousel-item">
+            <img src="img/technology-785742_640.jpg" class="d-block w-100" alt="Sistemas de Control de Versiones">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <nav class="navbar ">
+        <span  class= "titulo"class="navbar-brand mb-0 h1">Sistemas de Control de Versiones</span>
+      </nav>
+      <div class="contenido">
+    <div class="container">
+       <div class="row ">
+        <div  class="definicion",  class=" col-xl">
+          <br>
+        <h3><b>¿Que es un Sistema Control de Versiones?</b></h3><br>
+        <p>Un control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. Aunque en los ejemplos de este libro usarás archivos de código fuente como aquellos cuya versión está siendo controlada, en realidad puedes hacer lo mismo con casi cualquier tipo de archivo que encuentres en una computadora.</p>
+       
+        <p>El control de versiones se realiza principalmente en la industria informática para controlar las distintas versiones del código fuente dando lugar a los sistemas de control de código fuente o SCM (siglas del inglés Source Code Management). Sin embargo, los mismos conceptos son aplicables a otros ámbitos como documentos, imágenes, sitios web, etc.</p>
+        
+      </div>
+
+            <div class="definicion", class="col-xl"> 
+             
+        <h3><b>Sistemas de Control de Versiones Locales</b></h3>
+        <p>Los sistemas de control de versiones locales en vez de mantener las versiones como archivos independientes, los almacenaban en una base de datos. Un método de control de versiones, usado por muchas personas, es copiar los archivos a otro directorio. Este método es muy común porque es muy sencillo, pero también es tremendamente propenso a errores</p>
+           <p> Cuando era necesario revisar una versión anterior del proyecto se usaba el sistema de control de versiones en vez de acceder directamente al archivo, de esta manera en cualquier momento solo se tenia una copia del proyecto, eliminando la posibilidad de confundir o eliminar versiones.
+            En este punto el control de versiones se llevaba a cabo en el computador de cada uno de los desarrolladores y no existía una manera eficiente de compartir el código entre ellos.
+        </p>
+        <img src="img/locales.jpg" alt=" Control Versiones Locales" class="imagenes">
+      </div>
+
+        <div class="definicion", class="col-xl"> 
+         
+        <h3><b> Sistemas de Control de Versiones Centralizados</b></h3>
+        <p>Para facilitar la colaboración de múltiples desarrolladores en un solo proyecto los sistemas de control de versiones evolucionaron: en vez de almacenar los cambios y versiones en el disco duro de los desarrolladores, estos se almacenaban en un servidor.</p>
+        <p>En un sistema de control de versiones centralizado todos nuestros fuentes y sus versiones están almacenados en un único directorio (llamado repositorio de fuentes) de un ordenador (un servidor). Todos los desarrolladores que quieran trabajar con esos fuentes, deben pedirle al sistema de control de versiones una copia local para trabajar. En ella realizan todos sus cambios y cuando están listos y funcionando, le dicen al sistema de control de versiones que guarde los fuentes modificados como una nueva versión.Algunos ejemplos son CVS y subversión.</p>
+          <img src="img/centralizado.jpg" alt="Control de Versiones centralizados" class="imagenes">
+      </div>
+  
+        <div class="definicion", class="col-sm" > 
+         
+        <h3><b>  Sistemas de Control de Versiones Distribuidos</b></h3>
+        <p>La siguiente generación de sistemas de control de versiones se alejo de la idea de un solo repositorio centralizado y optó por darle a cada desarrollador una copia local de todo el proyecto, de esta manera se construyo una red distribuida de repositorios, en la que cada desarrollador podía trabajar de manera aislada pero teniendo un mecanismo de resolución de conflictos mucho más elegante que un su versión anterior.
+        </p>
+        <p>Al no existir un repositorio central, cada desarrollador puede trabajar a su propio ritmo, almacenar los cambios a nivel local y mezclar los conflictos que se presenten solo cuando se requiera. Cómo cada usuario tiene una copia completa del proyecto el riesgo por una caída del servidor, un repositorio dañado o cualquier otro tipo de perdida de datos es mucho menor que en cualquiera de sus predecesores.</p>
+        <img src="img/distribuido.jpg" alt="Control de versiones Distribuidos" class="imagenes">
+      </div>
+
+
+    <div class="definicion", class="col-sm">
+     
+        <h2>Funcionamiento</h2>
+        <p>Todos los sistemas de control de versiones se basan en disponer de un repositorio, que es el conjunto de información gestionada por el sistema. Este repositorio contiene el historial de versiones de todos los elementos gestionados.</p>
+
+           <p> Cada uno de los usuarios puede crearse una copia local duplicando el contenido del repositorio para permitir su uso. Es posible duplicar la última versión o cualquier versión almacenada en el historial. Este proceso se suele conocer como checkout o desproteger.</p>
+        </div>
+        
+    <div class="definicion", class="col-sm">
+      
+        <h3>Tipos de Funcionamiento</h3>
+        <br>
+        <h3>Exclusivo</h3>
+        <p>Para poder realizar un cambio es necesario marcar en el repositorio el elemento que se desea modificar y el sistema se encargará de impedir que otro usuario pueda modificar dicho elemento.</p>
+        
+        <h4>Colaborativos</h4>
+        <p>En el que cada usuario se descarga la copia, la modifica, y el sistema automáticamente combina las diversas modificaciones.</p>
+    </div>
+
+    <div class="definicion", class="col-sm">
+    
+        <h3>Caracteristicas</h3>
+        <p>Un sistema de control de versiones debe proporcionar:</p>
+        <p>Mecanismo de almacenamiento de los elementos que deba gestionar (ej. archivos de texto, imágenes, documentación...).</p>
+        <p>Posibilidad de realizar cambios sobre los elementos almacenados (ej. modificaciones parciales, añadir, borrar).</p>
+        <p>Registro histórico de las acciones realizadas con cada elemento o conjunto de elementos.</p>
+
+    </div>
+   
+    <div class="definicion", class="col-sm" >
+    <h3 >Ventajas de los Sistemas de Control de Versiones</h3><br>
+
+    <p><b>1.Un completo historial de cambios a largo plazo de todos los archivos:</b> Esto quiere decir todos los cambios realizados por muchas personas a lo largo de los años. Los cambios incluyen la creación y la eliminación de los archivos, así como los cambios de sus contenidos. </p>
+    <p><b>2.Creación de ramas y fusiones:</b> Si se tiene a miembros del equipo trabajando al mismo tiempo, es algo evidente; pero incluso las personas que trabajan solas pueden beneficiarse de la capacidad de trabajar en flujos independientes de cambios. La creación de una "rama" en las herramientas de VCS mantiene múltiples flujos de trabajo independientes los unos de los otros al tiempo que ofrece la facilidad de volver a fusionar ese trabajo, lo que permite que los desarrolladores verifiquen que los cambios de cada rama no entran en conflicto. </p>
+    <p><b>3.Trazabilidad:</b> Ser capaz de trazar cada cambio que se hace en el software y conectarlo con un software de gestión de proyectos y seguimiento de errores como Jira, además de ser capaz de anotar cada cambio con un mensaje que describa el propósito y el objetivo del cambio, no solo te ayuda con el análisis de la causa raíz y la recopilación de información.  </p>
+
+  </div> 
+<div class="definicion", class="col-sm" class="git">
+  
+  <h2>Pasos para instalar GitHub</h2>
+  <img src="img/git.jpg" alt="GitHub" class="imagenes">
+  <p>1.Visita la página de descargas GitHub Desktop .</p>
+  <a href="https://desktop.github.com/">Haz click aqui</a>
+  <p>2.Escoge Download for Windows (Descargar para Windows).</p>
+  <p>3.En la carpeta Download (Descargas) de tu computadora, haz doble clic en GitHub Desktop.</p>
+  <p>4.En la ventana emergente, haz clic en Install (Instalar).</p>
+  <p>5.Una vez que el programa haya sido instalado, haz clic en Run (Ejecutar).</p>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="JS/Actividad1.js"></script>
+</body>
+</html>
